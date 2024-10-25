@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Landing Page Visual</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="script.js">
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo"> <a href="#">Lading Page Viagens</a> </div>
+      <ul class="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <h1>Bem-vindo à Sua Marca</h1>
+      <p>A melhor solução para o que você procura</p>
+      <a href="#about" class="btn">Saiba Mais</a>
+    </div>
+  </header>
+
+  <section id="about" class="about-section">
+    <h2>Sobre Nós</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel urna nulla.</p>
+    <img src="./Components/img/viver viajens.jpg" alt="Imagem sobre nós">
+  </section>
+
+  <section id="services" class="services-section">
+    <h2>Nossos Serviços</h2>
+    <div class="service">
+      <img src="./Components/img/miami.webp" alt="Serviço 1">
+      <h3>Miami</h3>
+      <p>Descrição do serviço 1.</p>
+    </div>
+    <div class="service">
+      <img src="./Components/img/new york.jpg" alt="Serviço 2">
+      <h3>New york</h3>
+      <p>Descrição do serviço 2.</p>
+    </div>
+    <div class="service">
+      <img src="./Components/img/brasil 2.jpg" alt="Serviço 3">
+      <h3>Brasil</h3>
+      <p>Descrição do serviço 3.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contato</h2>
+    <form action="#" method="POST">
+      <input type="text" name="nome" placeholder="Seu Nome" required>
+      <input type="email" name="email" placeholder="Seu Email" required>
+      <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+      <button type="submit" class="btn">Enviar Mensagem</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Sua Marca - Todos os direitos reservados</p>
+
+  </footer>
+
+  <script src="script.js">
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
